@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pjueon의 학습 노트</title>
+<meta name="description" content="공부한 주제를 교재 형태로 정리해 둔 곳">
+<style>
+  :root {
+    --bg: #faf9f6; --card: #ffffff; --text: #1f2328; --muted: #656d76;
+    --border: #e3e0d8; --accent: #2f6f5e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181a; --card: #1f2224; --text: #e6e6e6; --muted: #9aa0a6; --border: #33373a; --accent: #6fbfa8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", "Malgun Gothic", sans-serif; line-height: 1.6; }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 16px 80px; }
+  h1 { font-size: 1.8rem; margin: 0 0 8px; }
+  .lead { color: var(--muted); margin: 0 0 36px; }
+  .cards { display: grid; gap: 16px; }
+  a.card { display: block; padding: 20px 22px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; color: inherit; text-decoration: none; transition: border-color .15s, transform .15s; }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); transform: translateY(-2px); outline: none; }
+  .card h2 { font-size: 1.15rem; margin: 0 0 6px; color: var(--accent); }
+  .card p { margin: 0 0 10px; }
+  .meta { font-size: .85rem; color: var(--muted); }
+  footer { margin-top: 40px; font-size: .85rem; color: var(--muted); }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>학습 노트</h1>
+  <p class="lead">공부한 주제를 예제 중심의 교재로 정리해 둔 곳입니다. 장 단위로 화면을 넘기며 읽고, 퀴즈로 확인합니다.</p>
+
+  <div class="cards">
+    <a class="card" href="/LearningDDD/">
+      <h2>도메인 주도 설계 첫걸음</h2>
+      <p>가상의 쇼핑몰 "한빛몰"로 Entity, Aggregate, Bounded Context까지 DDD의 핵심 개념을 익히고, 언제 쓰지 말아야 할지도 판단해 봅니다.</p>
+      <div class="meta">15장 + 용어집 · 약 32.5시간 · Python</div>
+    </a>
+    <a class="card" href="/LearningDBDesign/">
+      <h2>DB 설계 첫걸음</h2>
+      <p>가상의 카페 "동백커피"가 가맹점으로 커 가는 과정을 따라가며, 요구사항이 바뀌어도 버티는 관계형 스키마를 고르는 법을 배웁니다.</p>
+      <div class="meta">11장 + 용어집 · 약 26시간 · PostgreSQL</div>
+    </a>
+  </div>
+
+  <footer><a href="https://github.com/pjueon">github.com/pjueon</a></footer>
+</main>
+</body>
+</html>
